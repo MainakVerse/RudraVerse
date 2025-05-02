@@ -30,9 +30,9 @@ export default function RootLayout({
         )}
       >
         <FireCursor />
-        <div className="fixed top-4 right-4 z-50">
-          <SoundToggle />
-        </div>
+        <div className="fixed z-50 right-4 bottom-4 sm:top-4 sm:bottom-auto">
+  <SoundToggle />
+</div>
         {children}
       </body>
     </html>
