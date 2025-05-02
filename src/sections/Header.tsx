@@ -1,0 +1,63 @@
+"use client";
+
+
+import MenuIcon from "@/assets/icon-menu.svg";
+import { Button } from "../../components/button";
+
+export const Header = () => {
+  return (
+    <header className="sticky top-0 z-50 py-4 leading-none  md:h-0 ">
+      <div className="w-[90%] md:w-[80%]  m-auto">
+        <div className="flex items-center justify-between p-2.5 border border-white/15 rounded-full max-w-[100%] mx-auto backdrop-blur relative">
+          <div className="bg-black/5 absolute inset-0 rounded-full -z-10 backdrop-blur"></div>
+          <div>
+            <div className="inline-flex items-center justify-center gap-1 p-1 border rounded-full w-25 border-white/15">
+              <div className="h-[30px] w-[30px]">
+                
+              </div>
+              <div className="mr-1 text-sm font-extrabold font-cinzel">
+                RV
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden md:block">
+            <nav className="flex gap-8 text-sm font-cinzel">
+              <a className="transition text-white/50 hover:text-white" href="#">
+                About
+              </a>
+              <a className="transition text-white/50 hover:text-white" href="#">
+                Services
+              </a>
+              <a className="transition text-white/50 hover:text-white" href="#">
+                Brand Elevation
+              </a>
+              <a className="transition text-white/50 hover:text-white" href="#">
+                Contact Me
+              </a>
+            </nav>
+          </div>
+
+          <div className="flex items-center gap-4">
+            {/* <button className="relative px-3 py-2 text-sm font-medium  rounded-lg bg-gradient-to-b from-[#7A1000] to-[#FE9D00] shadow-[0px_0px_12px_#A92000]">
+              <div className="absolute inset-0">
+                <div className=" rounded-lg absolute inset-0 border border-white/20 [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+                <div className=" rounded-lg absolute inset-0 border border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+                <div className="absolute inset-0 shadow-[0_0_10px_rgba(169,32,0,0.7)_inset]  rounded-lg"></div>
+              </div>{" "}
+              <span> Join Waitlist</span>{" "}
+            </button> */}
+
+            <div className="sm:hidden md:block">
+              <Button>Get Quote</Button>
+            </div>
+
+           
+
+            <MenuIcon className="md:hidden"></MenuIcon>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
