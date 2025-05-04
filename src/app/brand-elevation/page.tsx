@@ -1,8 +1,8 @@
 // import { Features } from "@/sections/Features";
+import Brand from "@/sections/Branding";
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
 
-import { LogoTicker } from "@/sections/LogoTicker";
 
 
 export default function BrandElevation() {
@@ -10,7 +10,7 @@ export default function BrandElevation() {
 
   <Header></Header>
 
-  <LogoTicker></LogoTicker>
+  <Brand />
   
   <Footer/>
  

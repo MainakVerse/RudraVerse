@@ -1,17 +1,16 @@
 // import { Features } from "@/sections/Features";
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
-
-import { LogoTicker } from "@/sections/LogoTicker";
+import ServicePage from "@/sections/ServicePage";
+// import VideoPlayer from "@/sections/ServiceVid";
 
 
 export default function Services() {
   return <>
 
-  <Header></Header>
-  
-  <LogoTicker></LogoTicker>
-  
+  <Header /> 
+  <ServicePage />
+  {/* <VideoPlayer /> */}
   <Footer/>
  
   </>;
