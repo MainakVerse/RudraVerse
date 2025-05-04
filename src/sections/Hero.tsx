@@ -91,9 +91,9 @@ export const Hero = () => {
           <span className="text-primary">
             <Typewriter
               words={[
-                "Creative Professional",
-                "Content & Editorial Writing",
                 "Public Relations Manager",
+                "Creative Professional",
+                "Content & Editorial Writing",                
                 "Social Media Strategist",
                 "Brand Creation & Scaling",
                 "C-Level Management & Operations",

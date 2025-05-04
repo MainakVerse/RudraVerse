@@ -1,8 +1,7 @@
 // import { Features } from "@/sections/Features";
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
-
-import { LogoTicker } from "@/sections/LogoTicker";
+import {ContactForm} from "@/sections/ContactForm"
 
 
 export default function Contacts() {
@@ -10,7 +9,7 @@ export default function Contacts() {
 
   <Header></Header>
  
-  <LogoTicker></LogoTicker>
+  <ContactForm />
   
   <Footer/>
  
