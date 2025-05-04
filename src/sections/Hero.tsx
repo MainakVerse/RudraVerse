@@ -9,7 +9,7 @@ import ImageBlocksWrapper from "../components/ui/heroimg";
 import { useRef } from "react";
 import dynamic from "next/dynamic";
 import { Typewriter } from 'react-simple-typewriter';
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import Link from "next/link";
 
 
 
@@ -110,7 +110,9 @@ export const Hero = () => {
       </div>
 
       <div className="flex justify-center m-5"> 
-        <Button>Learn More</Button>
+      <Link href="/brand-elevation">
+    <Button>Learn More</Button>
+  </Link>
       </div>
     </motion.div>
   </div>

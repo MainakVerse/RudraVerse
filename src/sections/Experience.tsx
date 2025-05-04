@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import aiImage1 from "@/assets/ai-img-1.png";
@@ -9,14 +10,6 @@ import aiImage6 from "@/assets/ai-img-6.png";
 import aiImage7 from "@/assets/ai-img-7.png";
 import aiImage8 from "@/assets/ai-img-8.png";
 import aiImage9 from "@/assets/ai-img-9.png";
-
-import aiLast from "@/assets/ai-last.png";
-
-
-import igPost from "@/assets/ig-post.png";
-import browEle from "@/assets/browser-ele.png";
-import { DotLottiePlayer } from "@dotlottie/react-player";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { GlobalHeading } from "../../components/GlobalHeading";
 

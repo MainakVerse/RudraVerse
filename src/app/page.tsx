@@ -1,11 +1,12 @@
 import { CallToAction } from "@/sections/CallToAction";
 import { Experience } from "@/sections/Experience";
-// import { Features } from "@/sections/Features";
+import FaqSection from "@/sections/FAQ";
 import { Footer } from "@/sections/Footer";
 import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import { LogoTicker } from "@/sections/LogoTicker";
-import { Testimonials } from "@/sections/Testimonials";
+import Services from "@/sections/Services";
+
 
 export default function Home() {
   return <>
@@ -14,8 +15,8 @@ export default function Home() {
   <Hero></Hero>
   <LogoTicker></LogoTicker>
   <Experience></Experience>
-  {/* <Features></Features> */}
-  <Testimonials></Testimonials>
+  <Services />
+  <FaqSection />
   <CallToAction></CallToAction>
   <Footer/>
  

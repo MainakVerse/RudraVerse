@@ -3,25 +3,21 @@
 import { useState, useEffect } from "react";
 import MenuIcon from "@/assets/icon-menu.svg";
 import { Button } from "../../components/button";
-import { Volume2 } from "lucide-react"; // Using lucide-react for sound icon
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
+  const pathname = usePathname(); // Get current path
 
-  // Handle checking if we're in mobile view
   useEffect(() => {
     const checkIfMobile = () => {
       setIsMobileView(window.innerWidth <= 320);
     };
 
-    // Check on initial load
     checkIfMobile();
-    
-    // Add event listener
     window.addEventListener('resize', checkIfMobile);
-    
-    // Clean up
     return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
 
@@ -29,35 +25,37 @@ export const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navLinks = [
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/brand-elevation", label: "Brand Elevation" },
+    { href: "/contacts", label: "Contact Me" },
+  ];
+
   return (
     <header className="sticky top-0 z-50 py-4 leading-none md:h-0">
       <div className="w-[90%] md:w-[80%] m-auto">
         <div className="flex items-center justify-between p-2.5 border border-white/15 rounded-full max-w-[100%] mx-auto backdrop-blur relative">
           <div className="bg-black/5 absolute inset-0 rounded-full -z-10 backdrop-blur"></div>
-          <div>
-            <div className="inline-flex items-center justify-center gap-1 p-1 border rounded-full w-25 border-white/15">
-              <div className="h-[30px] w-[30px]"></div>
-              <div className="mr-1 text-sm font-extrabold font-cinzel">
-                RV
-              </div>
-            </div>
+          
+          <div className="ml-5 text-xl font-extrabold font-cinzel">
+            <Link href={"/"}>RV</Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <nav className="flex gap-8 text-sm font-cinzel">
-              <a className="transition text-white/50 hover:text-white" href="#">
-                About
-              </a>
-              <a className="transition text-white/50 hover:text-white" href="#">
-                Services
-              </a>
-              <a className="transition text-white/50 hover:text-white" href="#">
-                Brand Elevation
-              </a>
-              <a className="transition text-white/50 hover:text-white" href="#">
-                Contact Me
-              </a>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`transition hover:text-white ${
+                    pathname === link.href ? "text-white" : "text-white/50"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
           </div>
 
@@ -67,8 +65,8 @@ export const Header = () => {
             </div>
 
             {/* Hamburger Menu Button */}
-            <button 
-              onClick={toggleMenu} 
+            <button
+              onClick={toggleMenu}
               className="md:hidden focus:outline-none"
               aria-label="Toggle menu"
             >
@@ -83,39 +81,23 @@ export const Header = () => {
         <div className="fixed inset-0 z-40 pt-20 bg-black/90 md:hidden">
           <div className="w-[90%] mx-auto">
             <nav className="flex flex-col gap-6 text-base font-cinzel">
-              <a 
-                className="transition px-4 py-2 border border-white/15 rounded-lg text-white hover:bg-white/10" 
-                href="#"
-                onClick={toggleMenu}
-              >
-                About
-              </a>
-              <a 
-                className="transition px-4 py-2 border border-white/15 rounded-lg text-white hover:bg-white/10" 
-                href="#"
-                onClick={toggleMenu}
-              >
-                Services
-              </a>
-              <a 
-                className="transition px-4 py-2 border border-white/15 rounded-lg text-white hover:bg-white/10" 
-                href="#"
-                onClick={toggleMenu}
-              >
-                Brand Elevation
-              </a>
-              <a 
-                className="transition px-4 py-2 border border-white/15 rounded-lg text-white hover:bg-white/10" 
-                href="#"
-                onClick={toggleMenu}
-              >
-                Contact Me
-              </a>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={toggleMenu}
+                  className={`transition px-4 py-2 border border-white/15 rounded-lg text-white hover:bg-white/10 ${
+                    pathname === link.href ? "bg-white/10" : ""
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <div className="mt-4">
                 <Button>Get Quote</Button>
               </div>
             </nav>
-            <button 
+            <button
               onClick={toggleMenu}
               className="absolute top-6 right-6 text-white p-2 rounded-full bg-white/10 hover:bg-white/20"
               aria-label="Close menu"
@@ -127,10 +109,6 @@ export const Header = () => {
           </div>
         </div>
       )}
-
-      
-
-      
     </header>
   );
 };

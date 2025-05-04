@@ -2,6 +2,7 @@
 import { Button } from "../../components/button";
 import starsBg from "@/assets/starses.png";
 import gridLines from "@/assets/grid-lines.png";
+import Link from "next/link";
 import { RefObject, useEffect, useRef, useTransition } from "react";
 import {
   motion,
@@ -89,15 +90,15 @@ export const CallToAction = () => {
           <div>
             <div className="mb-8 relative">
               <h2 className="w-[80%] m-auto text-2xl tracking-tighter text-center mb-7 md:text-6xl font-cinzel">
-                Stay Tuned For Tons of Sparks & Surprises
+                Explore More On RudraVerse
               </h2>
               <p className="max-w-2xl mx-auto text-sm font-normal tracking-tight text-center text-white/70 md:text-xl font-cinzel">
-                Join us now to get exclusive updates and early access!
+                Check Out Our Services
               </p>
             </div>
 
             <div className="flex justify-center">
-              <Button>Join Waitlist</Button>
+              <Link href={"/services"}><Button>View Services</Button></Link>
             </div>
           </div>
         </motion.div>

@@ -2,9 +2,7 @@
 
 import igLogo from "@/assets/instagram.svg";
 import linkEdLogo from "@/assets/linkedin.svg";
-
-
-import { Cover } from "../components/ui/cover";
+import Link from "next/link";
 
 const sociaLogo = [igLogo, linkEdLogo];
 
@@ -20,28 +18,25 @@ export const Footer = () => {
       <section className="py-20 w-[90%] m-auto md:container">
         <div className="container flex flex-col gap-5 md:items-center md:flex-row md:justify-between">
           <div className="flex flex-row items-center gap-1 ">
-            <div className="w-8 border rounded-full w-25 border-white/15 p-0.5">
-             
-            </div>
-            <div className="mr-1 text-sm font-extrabold font-cinzel">
-              RV
+            
+            <div className="mr-1 text-xl font-extrabold font-cinzel">
+            <Link href={"/"}>RV</Link>
             </div>
           </div>
           <div>
             <nav className="flex flex-col gap-4 text-sm font-cinzel md:flex-row">
-              <a className="transition text-white/50 hover:text-white" href="#">
+            <Link className="transition text-white/50 hover:text-white" href="/about">
                 About
-              </a>
-              <a className="transition text-white/50 hover:text-white" href="#">
+              </Link>
+              <Link className="transition text-white/50 hover:text-white" href="/services">
                 Services
-              </a>
-              <a className="transition text-white/50 hover:text-white" href="#">
+              </Link>
+              <Link className="transition text-white/50 hover:text-white" href="/brand-elevation">
                 Brand Elevation
-              </a>
-              <a className="transition text-white/50 hover:text-white" href="#">
+              </Link>
+              <Link className="transition text-white/50 hover:text-white" href="/contacts">
                 Contact Me
-              </a>
-              
+              </Link>              
             </nav>
           </div>
           <div className="flex gap-3">
