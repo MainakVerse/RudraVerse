@@ -40,16 +40,13 @@ const AboutHero = () => {
         <div className="flex-1 rounded-xl border p-6 shadow-md ">
           <h2 className="text-2xl font-semibold mb-2 text-yellow-500">About Me</h2>
           <p className="text-yellow-500">
-            Hey there! I am Biplab Deka (Rudra). I am a Dynamic and creative professional with expertise in content management, writing, and social media strategy, currently managing
- Luxe Magazine. Skilled in crafting engaging content, blogging, and
- storytelling to captivate audiences and drive brand growth. 
- <br/><br/>
- Adept at
- balancing creativity with data-driven decision-making to deliver
- impactful results. Known for strong writing skills, attention to detail, and
- collaboration, ensuring every project exceeds expectations.
- <br/><br/>
- If you are searching for the best place to get a brand elevation, get a creative portfolio or even a mentor in your success, I would be glad to hold your hands in the path of excellence.
+            Hey there! I am Biplab Deka (Rudra). My journey from engineering classrooms to building brands has been anything but linear, and that’s what makes it meaningful. Every win, every failure, every lesson has shaped not just the entrepreneur in me, but the person. </p> 
+<p className="text-yellow-500"><br/>
+ Being named among India’s Top 100 Budding Entrepreneurs and receiving the India’s Prime Icon award has been deeply humbling. But titles aside, what drives me most is the ability to help others grow—whether that’s by scaling businesses, simplifying operations, or creating sustainable strategies that actually work.</p>
+ <p className="text-yellow-500"><br/>
+As a mentor, I don’t just share frameworks—I share experiences. I believe in showing up honestly, and supporting those who are willing to take the leap. When I’m not working, you’ll probably find me writing, traveling, podcasting, or diving into a new book. I’m also drawn to spiritualism, dark psychology, and emotional healing—tools that help me stay grounded and guide others with empathy and awareness. </p>
+<p className="text-yellow-500"><br/>
+To me, entrepreneurship isn’t just about profit or performance—it’s about people, purpose, and building a life you’re proud of. I’m grateful to represent North-East India, and I’m here to keep learning, growing, and hopefully—helping a few others do the same along the way.
 
           </p>
         </div>
@@ -58,7 +55,7 @@ const AboutHero = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Counter target={750} label="Projects Completed" />
           <Counter target={500} label="Happy Clients" />
-          <Counter target={5} label="Years in Business" />
+          <Counter target={8} label="Years in Business" />
         </div>
       </div>
     </section>

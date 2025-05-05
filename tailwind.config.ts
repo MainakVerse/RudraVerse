@@ -32,6 +32,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         tomorrow: ['Tomorrow', 'sans-serif'],
+        cinzel: 'var(--font-cinzel)', // 🎯 Added Cinzel
+        playfair: 'var(--font-playfair)', // 🎯 Added Playfair
       },
       keyframes: {
         fireFlicker: {

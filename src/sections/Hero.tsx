@@ -75,10 +75,10 @@ export const Hero = () => {
     >
       <div className="mb-5">
         <h1 className="font-cinzel text-4xl md:text-7xl font-semibold text-center tracking-tighter bg-[radial-gradient(100%_100%_at_top_left,_white,_white,_rgba(226,_83,_25,_0.5))] text-transparent bg-clip-text">
-          Welcome To
+          {`Hey! I'm`}
           <div className="mt-5">
             <Cover className="flex bg-white items-center justify-center flex-1 w-auto bg-[radial-gradient(100%_100%_at_top_left,_white,_white,_rgba(226,_83,_25,_0.5))] text-transparent bg-clip-text">
-              RudraVerse
+              {`Rudra Deka`}
             </Cover>
           </div>
         </h1>
@@ -86,7 +86,7 @@ export const Hero = () => {
 
       {/* Typewriter Text */}
       <div className="max-w-lg mx-auto mb-5 text-base font-light font-cinzel md:text-xl text-neutral-700 dark:text-neutral-200 w-[90%]">
-        <div className="text-center text-amber-300 text-xl">{"India's # 1"}</div>
+        
         <div className="text-center">
           <span className="text-primary">
             <Typewriter

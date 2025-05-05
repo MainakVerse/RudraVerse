@@ -39,12 +39,12 @@ export const Header = () => {
           <div className="bg-black/5 absolute inset-0 rounded-full -z-10 backdrop-blur"></div>
           
           <div className="ml-5 text-xl font-extrabold font-cinzel">
-            <Link href={"/"}>RV</Link>
+            <Link href={"/"}>RD</Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <nav className="flex gap-8 text-sm font-cinzel">
+            <nav className="flex gap-8 text-xl font-playfair">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}

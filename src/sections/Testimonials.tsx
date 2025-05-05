@@ -10,7 +10,7 @@ import { GlobalHeading } from "../../components/GlobalHeading";
 
 const testimonials = [
   {
-    text: "“Absolutely mind-blowing! I never imagined I could look so cool in cyberpunk gear. RudraVerse is a game-changer!”",
+    text: "“Absolutely mind-blowing! I never imagined I could look so cool in cyberpunk gear. Rudra D is a game-changer!”",
     name: "Sophia Perez",
     title: "Director @ Quantum",
     avatarImg: avatar1,
@@ -22,7 +22,7 @@ const testimonials = [
     avatarImg: avatar2,
   },
   {
-    text: "“RudraVerse is a game-changer! I can't wait to see what else RudraVerse can do!”",
+    text: "“Rudra D is a game-changer! I can't wait to see what else Rudra D can do!”",
     name: "Alisa Hester",
     title: "Product @ Innovate",
     avatarImg: avatar3,
@@ -62,7 +62,7 @@ export const Testimonials = () => {
                 key={testimonial.name}
                 className="p-6 md:p-10 rounded-lg border-white/15 flex-none border bg-[linear-gradient(to_bottom_left,rgb(226,83,25,.3),black)] max-w-xs md:max-w-md"
               >
-                <div className="mb-4 text-lg tracking-tight md:text-lg font-cinzel">
+                <div className="mb-4 text-lg tracking-tight md:text-lg font-playfair">
                   {testimonial.text}
                 </div>
 

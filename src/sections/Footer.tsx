@@ -20,7 +20,7 @@ export const Footer = () => {
           <div className="flex flex-row items-center gap-1 ">
             
             <div className="mr-1 text-xl font-extrabold font-cinzel">
-            <Link href={"/"}>RV</Link>
+            <Link href={"/"}>RD</Link>
             </div>
           </div>
           <div>
