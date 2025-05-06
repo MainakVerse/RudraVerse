@@ -89,10 +89,10 @@ export const CallToAction = () => {
 
           <div>
             <div className="mb-8 relative">
-              <h2 className="w-[80%] m-auto text-2xl tracking-tighter text-center mb-7 md:text-6xl font-cinzel">
+              <h2 className="w-[80%] m-auto text-2xl tracking-tighter text-center mb-7 md:text-6xl font-playfair">
                 Explore More On Rudra D
               </h2>
-              <p className="max-w-2xl mx-auto text-sm font-normal tracking-tight text-center text-white/70 md:text-xl font-cinzel">
+              <p className="max-w-2xl mx-auto text-sm font-normal tracking-tight text-center text-white/70 md:text-xl font-playfair">
                 Check Out Our Services
               </p>
             </div>

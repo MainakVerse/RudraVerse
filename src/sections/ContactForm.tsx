@@ -137,7 +137,7 @@ export const ContactForm: React.FC = () => {
       animate={{ opacity: 1, x: 0 }}
       className="col-span-12 md:col-span-6 mt-16"
     >
-      <div className="bg-black/65 border border-yellow-500 shadow-md rounded-lg p-6">
+      <div className="bg-black/65 border border-yellow-500 font-playfair text-xl shadow-md rounded-lg p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Send Us a Message</h2>
         {submitStatus.type && (
           <div className="mb-6">
@@ -154,7 +154,7 @@ export const ContactForm: React.FC = () => {
           aria-label="Contact form"
         >
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-white">
+            <label htmlFor="name" className="block font-playfair text-xl text-white">
               Name
             </label>
             <input
@@ -173,7 +173,7 @@ export const ContactForm: React.FC = () => {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-white">
+            <label htmlFor="email" className="block font-playfair text-xl text-white">
               Email
             </label>
             <input
@@ -198,7 +198,7 @@ export const ContactForm: React.FC = () => {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-white">
+            <label htmlFor="message" className="block font-playfair text-xl text-white">
               Message
             </label>
             <textarea

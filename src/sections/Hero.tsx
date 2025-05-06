@@ -85,7 +85,7 @@ export const Hero = () => {
       </div>
 
       {/* Typewriter Text */}
-      <div className="max-w-lg mx-auto mb-5 text-base font-light font-cinzel md:text-xl text-neutral-700 dark:text-neutral-200 w-[90%]">
+      <div className="max-w-lg mx-auto mb-5 text-base font-light font-playfair md:text-2xl text-neutral-700 dark:text-neutral-200 w-[90%]">
         
         <div className="text-center">
           <span className="text-primary">

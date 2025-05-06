@@ -60,7 +60,7 @@ const Brand = () => {
   };
 
   return (
-    <section className="w-[90%] m-auto mt-16 py-10">
+    <section className="w-[90%] m-auto mt-16 py-10  font-playfair">
       <div className="flex flex-col items-center gap-6">
         {/* For mobile, use accordion, for desktop use grid */}
         <div className="w-full flex flex-col md:flex-row md:flex-wrap justify-center gap-12">

@@ -62,7 +62,7 @@ export default function FaqSection() {
             <div key={faq.id} className="border rounded-lg  shadow">
               <button
                 onClick={() => toggleAccordion(faq.id)}
-                className="w-full text-left px-6 py-4 font-medium text-lg focus:outline-none flex justify-between items-center"
+                className="w-full text-left px-6 py-4 font-medium text-lg focus:outline-none flex justify-between font-playfair items-center"
               >
                 {faq.question}
                 <span className="text-xl">
@@ -70,7 +70,7 @@ export default function FaqSection() {
                 </span>
               </button>
               {openIndex === faq.id && (
-                <div className="px-6 pb-4 text-yellow-300 transition">
+                <div className="px-6 pb-4 text-yellow-300 font-playfair transition">
                   {faq.answer}
                 </div>
               )}

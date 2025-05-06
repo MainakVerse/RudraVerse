@@ -27,7 +27,7 @@ const services = [
 
 const ServicePage = () => {
   return (
-    <section className="w-[90%] m-auto mt-16 py-10">
+    <section className="w-[90%] m-auto mt-16 py-10 font-playfair">
       <div className="flex flex-col items-center gap-6">
         {/* Top 3 boxes */}
         <div className="flex flex-wrap justify-center md:justify-around gap-6 w-full">

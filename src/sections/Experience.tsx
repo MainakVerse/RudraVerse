@@ -28,7 +28,7 @@ const aiImage = [
 export const Experience = () => {
   return (
     <section className="py-35">
-      <div className="w-[90%] m-auto md:container">
+      <div className="w-[90%] m-auto font-playfair md:container">
         <GlobalHeading
           title="   The Future of Fashion."
           subTitle=" Explore the bliss of powerful content, visual graphics and digital upliftment"

@@ -97,7 +97,7 @@ export default function Services() {
           subTitle=" Get a glimpse of my top 7 services and help me curate the best."
         />
 
-        <div className="flex flex-col-reverse lg:flex-row mt-8 gap-6">
+        <div className="flex flex-col-reverse lg:flex-row font-playfair mt-8 gap-6">
           {/* Button list (right panel on desktop) */}
           <div className="flex flex-col gap-4 w-full lg:max-w-[300px]">
             {services.map((service) => (
