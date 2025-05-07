@@ -6,6 +6,11 @@ import celestialLogo from "@/assets/logo-celestial.png";
 import quantumLogo from "@/assets/logo-quantum.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import echoLogo from "@/assets/logo-echo.png";
+import usPoloLogo from "@/assets/logo-uspolo.png";
+import audiLogo from "@/assets/logo-audi.png";
+import burberryLogo from "@/assets/logo-burberry.png";
+import versaceLogo from "@/assets/logo-versace.png";
+
 import { motion } from "framer-motion";
 
 export const LogoTicker = () => {
@@ -38,12 +43,20 @@ export const LogoTicker = () => {
               quantumLogo,
               pulseLogo,
               echoLogo,
+              usPoloLogo,
+              audiLogo,
+              burberryLogo,
+              versaceLogo,
               acmelogo,
               apexLogo,
               celestialLogo,
               quantumLogo,
               pulseLogo,
               echoLogo,
+              usPoloLogo,
+              audiLogo,
+              burberryLogo,
+              versaceLogo,
             ].map((logo) => (
               <img
                 src={logo.src}
